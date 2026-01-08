@@ -89,3 +89,168 @@ body {
 .nav-btn button:hover {
   background-color: #3c7a57;
 }
+/* ===============================
+   Banner / Hero Section
+================================ */
+.banner{
+  width: 1600px;
+  height: 720px;
+  position: relative;
+  background-image: url("../assets/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Dark overlay */
+.banner-overlay{
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 24, 36, 0.72);
+}
+
+/* Content */
+.banner-content{
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 980px;
+  padding: 0 20px;
+  color: #ffffff;
+}
+
+/* Badge */
+.banner-badge{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin-bottom: 26px;
+}
+
+.badge-icon{
+  width: 18px;
+  height: 18px;
+}
+
+.banner-badge span{
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Title */
+.banner-title{
+  font-size: 72px;
+  line-height: 1.08;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  margin-bottom: 20px;
+}
+
+.banner-title .green{
+  color: #30B868;
+}
+
+/* Subtitle */
+.banner-subtitle{
+  font-size: 16px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.82);
+  margin-bottom: 34px;
+}
+
+/* Buttons */
+.banner-actions{
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* Primary button */
+.btn-primary{
+  width: 260px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border-radius: 6px;
+  background: #30B868;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn-primary:hover{
+  background: #279a56;
+}
+
+.btn-icon{
+  width: 18px;
+  height: 18px;
+}
+
+/* Outline button */
+.btn-outline{
+  width: 200px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.btn-outline:hover{
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* Play icon */
+.play-circle{
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  line-height: 1;
+}
+
+/* Responsive (optional) */
+@media (max-width: 768px){
+  .banner{
+    width: 100%;
+    height: 620px;
+  }
+
+  .banner-title{
+    font-size: 42px;
+  }
+
+  .banner-subtitle{
+    font-size: 14px;
+  }
+
+  .btn-primary, .btn-outline{
+    width: 100%;
+    max-width: 320px;
+  }
+}
