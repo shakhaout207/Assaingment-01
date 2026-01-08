@@ -526,5 +526,106 @@ body {
     font-size: 30px;
   }
 }
+/* ===============================
+   Footer
+================================ */
+.footer{
+  width: 100%;
+  background: #071b2b;   /* dark navy */
+  color: rgba(255,255,255,0.85);
+  padding: 40px 0 26px;
+}
+
+.footer-inner{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 60px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* Left Logo */
+.footer-brand img{
+  width: 140px;
+  height: auto;
+  display: block;
+}
+
+/* Social */
+.footer-social{
+  text-align: right;
+}
+
+.footer-social p{
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: rgba(255,255,255,0.9);
+}
+
+.social-icons{
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.social-icons a{
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.social-icons img{
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* icons white */
+  opacity: 0.95;
+}
+
+.social-icons a:hover img{
+  opacity: 1;
+}
+
+/* Line */
+.footer-line{
+  max-width: 1200px;
+  margin: 26px auto 16px;
+  height: 1px;
+  background: rgba(255,255,255,0.12);
+}
+
+/* Copyright */
+.footer-copy{
+  text-align: center;
+  font-size: 12px;
+  color: rgba(255,255,255,0.75);
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px){
+  .footer-inner{
+    padding: 0 20px;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-social{
+    text-align: center;
+  }
+
+  .social-icons{
+    justify-content: center;
+  }
+}
 
 
