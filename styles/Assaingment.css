@@ -1,0 +1,91 @@
+/* ===== Global Style ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  width: 1600px; 
+  height: 92px;
+  flex-direction: row; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 120px 16px 120px;
+  background:#FFFFFF ;
+}
+
+/* ===== Logo ===== */
+/* ===== Logo / Brand ===== */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-icon {
+  width: 139px;
+  height:60 ;
+}
+
+/* .brand-text {
+  line-height: 1;
+}
+
+.brand-kv {
+  font-size: 56px;
+  font-weight: 800;
+  color: #2e7d32;
+}
+
+.brand-sub {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111;
+} */
+
+
+/* ===== Menu ===== */
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 152%;
+  width: 67;
+  height: 24;
+}
+
+/* ===== Button ===== */
+.nav-btn button {
+    width: 164px; 
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10;
+    background: #30B868;
+    color: #ffffff;
+    border: none;
+    padding: 12px 16px 12px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.nav-btn button:hover {
+  background-color: #3c7a57;
+}
