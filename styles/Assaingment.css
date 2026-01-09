@@ -1,4 +1,4 @@
-/* ===== Global Style ===== */
+
 * {
   margin: 0;
   padding: 0;
@@ -11,8 +11,7 @@ body {
   background-color: #ffffff;
 }
 
-/* ===== Navbar ===== */
-/* ===== Navbar (2nd SS alignment) ===== */
+
 .navbar{
   width: 1600px;
   height: 92px;
@@ -27,7 +26,7 @@ body {
   align-items: center;
 }
 
-/* Center menu */
+
 .menu{
   justify-self: center;
 }
@@ -46,7 +45,7 @@ body {
   font-weight: 500;
 }
 
-/* Right button */
+
 .nav-btn{
   justify-self: end;
 }
@@ -70,9 +69,7 @@ body {
 }
 
 
-/* ===============================
-   Banner (Match Screenshot)
-================================ */
+
 .banner{
   width: 1600px;          
   height: 720px;
@@ -89,14 +86,14 @@ body {
   justify-content: center;
 }
 
-/* Dark overlay like SS */
+
 .banner-overlay{
   position: absolute;
   inset: 0;
   background: rgba(10, 24, 36, 0.72);
 }
 
-/* CONTENT WRAP (main alignment fix) */
+
 .banner-wrap{
   position: relative;
   z-index: 2;
@@ -108,8 +105,7 @@ body {
   transform: translateY(22px);
 }
 
-/* Badge */
-/* --- Badge (make it like 1st SS) --- */
+
 .banner-badge{
   display: inline-flex;
   align-items: center;
@@ -124,7 +120,7 @@ body {
   margin-bottom: 28px;
 }
 
-/* icon size same, no extra filter */
+
 .banner-badge img{
   width: 16px;
   height: 16px;
@@ -138,7 +134,7 @@ body {
   color:
 }
 
-/* Title */
+
 .banner-title{
   font-size: 72px;
   line-height: 1.08;
@@ -151,7 +147,7 @@ body {
   color: #30B868;
 }
 
-/* Subtitle */
+
 .banner-subtitle{
   font-size: 15px;
   line-height: 1.8;
@@ -159,7 +155,7 @@ body {
   margin-bottom: 30px;
 }
 
-/* Buttons */
+
 .banner-actions{
   display: flex;
   justify-content: center;
@@ -167,7 +163,7 @@ body {
   flex-wrap: wrap;
 }
 
-/* Common button */
+
 .banner-btn{
   height: 48px;
   padding: 0 18px;
@@ -181,7 +177,7 @@ body {
   font-weight: 600;
 }
 
-/* Primary */
+
 .banner-btn-primary{
   background: #30B868;
   color: #fff;
@@ -199,7 +195,7 @@ body {
   border-color: #279a56;
 }
 
-/* Outline */
+
 .banner-btn-outline{
   background: rgba(255,255,255,0.06);
   color: #fff;
@@ -211,7 +207,7 @@ body {
   background: rgba(255,255,255,0.12);
 }
 
-/* Play circle */
+
 .play-circle{
   width: 22px;
   height: 22px;
@@ -224,23 +220,9 @@ body {
   line-height: 1;
 }
 
-/* Responsive */
-@media (max-width: 1600px){
-  .banner{ width: 100%; }
-}
 
-@media (max-width: 768px){
-  .banner{ height: 620px; }
-  .banner-title{ font-size: 42px; }
-  .banner-btn-primary, .banner-btn-outline{
-    width: 100%;
-    max-width: 320px;
-  }
-}
 
-/* ===============================
-   Problems Section
-================================ */
+
 .problems {
   width: 100%;
   background: #ffffff;
@@ -270,7 +252,7 @@ body {
   line-height: 1.7;
 }
 
-/* Cards Grid */
+
 .problems-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -278,7 +260,7 @@ body {
   align-items: stretch;
 }
 
-/* Single Card */
+
 .problem-box {
   width: 322px;
   height: 300px;
@@ -295,7 +277,7 @@ body {
   height: 56px;
   margin: 0 auto 18px;
   border-radius: 50%;
-  background: #ff5b5b; /* লাল সার্কেল */
+  background: #ff5b5b; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -321,9 +303,7 @@ body {
 }
 
 
-/* ===============================
-   Solution Section
-================================ */
+
 .solution{
   width: 100%;
   background: #ffffff;
@@ -341,7 +321,7 @@ body {
   gap: 60px;
 }
 
-/* Left image card */
+
 .solution-illustration{
   background: #ffffff;
   border-radius: 16px;
@@ -356,7 +336,7 @@ body {
   border-radius: 12px;
 }
 
-/* Right content */
+
 .solution-label{
   font-size: 12px;
   letter-spacing: 1.4px;
@@ -381,7 +361,7 @@ body {
   max-width: 520px;
 }
 
-/* Checklist */
+
 .solution-list{
   list-style: none;
   padding: 0;
@@ -399,7 +379,7 @@ body {
   font-weight: 600;
 }
 
-/* Green check bullet */
+
 .solution-list li::before{
   content: "✓";
   position: absolute;
@@ -417,9 +397,6 @@ body {
 }
 
 
-
-  /* pTA Section
-================================ */
 .pta {
   width: 100%;
   background: #faf8f3;   
@@ -447,7 +424,7 @@ body {
   margin-bottom: 28px;
 }
 
-/* Button */
+
 .pta-btn {
   display: inline-flex;
   align-items: center;
@@ -474,7 +451,7 @@ body {
   background: #279a56;
 }
 
-/* Note */
+
 .pta-note {
   margin-top: 16px;
   font-size: 12px;
@@ -483,8 +460,7 @@ body {
 
 
 
-  /* Footer
-================================ */
+  
 .footer{
   width: 100%;
   background: #071b2b;   
@@ -502,14 +478,14 @@ body {
   justify-content: space-between;
 }
 
-/* Left Logo */
+
 .footer-brand img{
   width: 139px;
   height: 60px;
   display: block;
 }
 
-/* Social */
+
 .footer-social{
   text-align: right;
 }
@@ -550,7 +526,7 @@ body {
   opacity: 1;
 }
 
-/* Line */
+
 .footer-line{
   max-width: 1200px;
   margin: 26px auto 16px;
@@ -558,7 +534,7 @@ body {
   background: rgba(255, 255, 255, 0.123);
 }
 
-/* Copyright */
+
 .footer-copy{
   text-align: center;
   font-size: 12px;
