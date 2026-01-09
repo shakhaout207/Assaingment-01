@@ -245,6 +245,7 @@ body {
   width: 100%;
   background: #ffffff;
   padding: 90px 0 110px;
+  margin: 0 auto;
 }
 
 .problems .container {
@@ -417,29 +418,29 @@ body {
 
 
 
-  /* CTA Section
+  /* pTA Section
 ================================ */
-.cta {
+.pta {
   width: 100%;
   background: #faf8f3;   
   padding: 110px 0;
 }
 
-.cta-container {
+.pta-container {
   max-width: 900px;
   margin: 0 auto;
   padding: 0 20px;
   text-align: center;
 }
 
-.cta-title {
+.pta-title {
   font-size: 40px;
   font-weight: 800;
   color: #0b1f2c;
   margin-bottom: 14px;
 }
 
-.cta-subtitle {
+.pta-subtitle {
   font-size: 14px;
   color: rgba(11, 31, 44, 0.65);
   line-height: 1.7;
@@ -447,7 +448,7 @@ body {
 }
 
 /* Button */
-.cta-btn {
+.pta-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -464,20 +465,20 @@ body {
   font-weight: 600;
 }
 
-.cta-btn img {
+.pta-btn img {
   width: 16px;
   height: 16px;
 }
 
-.cta-btn:hover {
+.pta-btn:hover {
   background: #279a56;
 }
 
 /* Note */
-.cta-note {
+.pta-note {
   margin-top: 16px;
   font-size: 12px;
-  color: rgba(11, 31, 44, 0.55);
+  color: rgba(11, 31, 44, 0.501);
 }
 
 
@@ -503,8 +504,8 @@ body {
 
 /* Left Logo */
 .footer-brand img{
-  width: 140px;
-  height: auto;
+  width: 139px;
+  height: 60px;
   display: block;
 }
 
@@ -540,8 +541,9 @@ body {
   width: 36px;
   height: 36px;
   object-fit: contain;
-  filter: brightness(0) invert(1); /* icons white */
+  filter: brightness(0) invert(1); 
   opacity: 0.95;
+  color: #ffffff;
 }
 
 .social-icons a:hover img{
@@ -553,14 +555,14 @@ body {
   max-width: 1200px;
   margin: 26px auto 16px;
   height: 1px;
-  background: rgba(255,255,255,0.12);
+  background: rgba(255, 255, 255, 0.123);
 }
 
 /* Copyright */
 .footer-copy{
   text-align: center;
   font-size: 12px;
-  color: rgba(255,255,255,0.75);
+  color: rgba(255, 255, 255, 0.658);
   margin: 0;
 }
 
