@@ -21,7 +21,7 @@ body {
   background: #ffffff;
   border-bottom: 1px solid #eaeaea;
 
-  /* ✅ 3-column perfect align */
+  
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
@@ -63,7 +63,7 @@ body {
   cursor: pointer;
 }
 
-/* ✅ Logo text break বন্ধ */
+
 .brand-text,
 .brand-sub{
   white-space: nowrap;
@@ -74,12 +74,12 @@ body {
    Banner (Match Screenshot)
 ================================ */
 .banner{
-  width: 1600px;          /* তোমার figma frame অনুযায়ী */
+  width: 1600px;          
   height: 720px;
   margin: 0 auto;
   position: relative;
 
-  background-image: url("../assets/hero-bg.png");  /* ✅ তোমার দেওয়া banner */
+  background-image: url("../assets/hero-bg.png");  
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -104,33 +104,38 @@ body {
   text-align: center;
   padding: 0 20px;
 
-  /* ✅ এইটা ২য় SS-এর মতো নিচে নামায় */
+  
   transform: translateY(22px);
 }
 
 /* Badge */
+/* --- Badge (make it like 1st SS) --- */
 .banner-badge{
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  padding: 10px 16px;
+  padding: 8px 14px;
   border-radius: 999px;
 
-  background: rgba(255,255,255,0.12);
-  border: 1px solid rgba(255,255,255,0.22);
+  background: #ffffff;                 
+  border: 1px solid rgba(0,0,0,0.06);  
+  box-shadow: 0 10px 22px rgba(0,0,0,0.12); 
 
   margin-bottom: 28px;
 }
 
+/* icon size same, no extra filter */
 .banner-badge img{
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
+  display: block;
 }
+
 
 .banner-badge span{
   font-size: 14px;
   font-weight: 500;
-  color: rgba(255,255,255,0.90);
+  color:
 }
 
 /* Title */
@@ -245,7 +250,7 @@ body {
 .problems .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 24px;
   text-align: center;
 }
 
@@ -257,7 +262,7 @@ body {
 }
 
 .problems-subtitle {
-  font-size: 14px;
+  font-size: 16px;
   color: rgba(11, 31, 44, 0.65);
   max-width: 720px;
   margin: 0 auto 46px;
@@ -273,7 +278,9 @@ body {
 }
 
 /* Single Card */
-.problem-card {
+.problem-box {
+  width: 322px;
+  height: 300px;
   background: #ffffff;
   border-radius: 10px;
   padding: 28px 22px 26px;
@@ -298,7 +305,7 @@ body {
   height: 26px;
 }
 
-.problem-card h3 {
+.problem-box h3 {
   font-size: 18px;
   font-weight: 800;
   color: #0b1f2c;
@@ -306,28 +313,13 @@ body {
   line-height: 1.2;
 }
 
-.problem-card p {
+.problem-box p {
   font-size: 13px;
   color: rgba(11, 31, 44, 0.65);
   line-height: 1.6;
 }
 
-/* Responsive */
-@media (max-width: 1024px) {
-  .problems-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
-@media (max-width: 540px) {
-  .problems-title {
-    font-size: 32px;
-  }
-
-  .problems-grid {
-    grid-template-columns: 1fr;
-  }
-}
 /* ===============================
    Solution Section
 ================================ */
@@ -357,8 +349,8 @@ body {
 }
 
 .solution-illustration img{
-  width: 100%;
-  height: auto;
+  width: 600;
+  height: 600;
   display: block;
   border-radius: 12px;
 }
@@ -423,23 +415,13 @@ body {
   justify-content: center;
 }
 
-/* Responsive */
-@media (max-width: 992px){
-  .solution-container{
-    grid-template-columns: 1fr;
-    gap: 34px;
-  }
 
-  .solution-title{
-    font-size: 34px;
-  }
-}
-/* ===============================
-   CTA Section
+
+  /* CTA Section
 ================================ */
 .cta {
   width: 100%;
-  background: #faf8f3;   /* light off-white */
+  background: #faf8f3;   
   padding: 110px 0;
 }
 
@@ -498,18 +480,13 @@ body {
   color: rgba(11, 31, 44, 0.55);
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-  .cta-title {
-    font-size: 30px;
-  }
-}
-/* ===============================
-   Footer
+
+
+  /* Footer
 ================================ */
 .footer{
   width: 100%;
-  background: #071b2b;   /* dark navy */
+  background: #071b2b;   
   color: rgba(255,255,255,0.85);
   padding: 40px 0 26px;
 }
@@ -587,23 +564,6 @@ body {
   margin: 0;
 }
 
-/* Responsive */
-@media (max-width: 768px){
-  .footer-inner{
-    padding: 0 20px;
-    flex-direction: column;
-    gap: 18px;
-    align-items: center;
-    text-align: center;
-  }
 
-  .footer-social{
-    text-align: center;
-  }
-
-  .social-icons{
-    justify-content: center;
-  }
-}
 
 
